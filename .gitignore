@@ -20,3 +20,6 @@ Desktop.ini
 # Dependency folders if added later
 /vendor/
 node_modules/
+
+# Local setup guide - not needed in repo
+README_SETUP.md
