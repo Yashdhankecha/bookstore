@@ -1,0 +1,22 @@
+# XAMPP / runtime generated
+install.lock
+*.log
+*.cache
+
+# OS files
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Keep database.sql but ignore temp dumps
+# database.sql is required for setup.php
+
+# Dependency folders if added later
+/vendor/
+node_modules/

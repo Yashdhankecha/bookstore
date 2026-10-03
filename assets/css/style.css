@@ -1,0 +1,196 @@
+:root {
+    --primary-color: #6b4226;
+    --primary-color-dark: #52311c;
+    --secondary-color: #c9a15a;
+    --accent-color: #8a5a3b;
+    --light-bg: #faf6f0;
+    --white: #ffffff;
+    --dark: #2b211b;
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6,
+.font-serif {
+    font-family: 'Playfair Display', 'Inter', serif;
+}
+
+.navbar {
+    background-color: var(--white) !important;
+    box-shadow: 0 2px 10px rgba(43, 33, 27, 0.08);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--primary-color) !important;
+}
+
+.brand-text {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--primary-color) !important;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color-dark), var(--accent-color));
+    color: var(--white);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+.product-card {
+    background: var(--white);
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: var(--transition);
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(43, 33, 27, 0.12);
+}
+
+.product-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-boutique {
+    background: var(--white);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(43, 33, 27, 0.08);
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--primary-color-dark);
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: var(--primary-color-dark);
+}
+
+.btn-primary:hover {
+    background-color: #b78e48;
+    color: var(--primary-color-dark);
+}
+
+.btn-outline-warm {
+    border: 1px solid var(--secondary-color);
+    color: var(--primary-color-dark);
+    background: transparent;
+    transition: var(--transition);
+}
+
+.btn-outline-warm:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color-dark);
+}
+
+.badge-pill-soft {
+    background: rgba(201, 161, 90, 0.18);
+    color: var(--primary-color-dark);
+    border-radius: 50px;
+    padding: 4px 12px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: var(--secondary-color);
+    color: var(--primary-color-dark);
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.footer {
+    background-color: var(--primary-color-dark);
+    color: var(--white);
+    padding: 50px 0;
+    margin-top: 100px;
+}
+
+.footer .brand-text {
+    -webkit-text-fill-color: initial;
+    background: none;
+    color: var(--secondary-color);
+}
+
+.admin-sidebar {
+    background: var(--primary-color-dark);
+    min-height: 100vh;
+    color: white;
+    padding-top: 20px;
+}
+
+.admin-sidebar a {
+    color: rgba(255,255,255,0.8);
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.admin-sidebar a:hover, .admin-sidebar a.active {
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.25rem rgba(201, 161, 90, 0.25);
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--accent-color);
+}
